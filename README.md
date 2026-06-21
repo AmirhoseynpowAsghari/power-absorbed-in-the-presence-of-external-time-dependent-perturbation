@@ -148,6 +148,3 @@ Each `main_*.py` accepts a `recompute` flag (`True` by default): set it to `Fals
 | `ultrasonic_U` | `W_WN_U_temperature_sweep.png` | `W/W_N`, gap, and `μ` vs temperature at three `U` values |
 | `ultrasonic_U` | `W_WN_vs_U.png` | `W/W_N` vs `U` at fixed `T/Tc` fractions |
 
-## License
-
-No license file is currently included in this repository.
