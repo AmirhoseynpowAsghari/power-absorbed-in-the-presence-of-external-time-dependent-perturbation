@@ -13,7 +13,7 @@ class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
             return obj.tolist()
-        if isinstance(obj, np.floating):
+        if isinstance(obj, np.floating): 
             return float(obj)
         if isinstance(obj, np.integer):
             return int(obj)
