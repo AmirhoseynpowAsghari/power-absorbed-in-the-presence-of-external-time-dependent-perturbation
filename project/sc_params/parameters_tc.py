@@ -7,7 +7,7 @@ import numpy as np
 
 # ── Physical parameters ───────────────────────────────────────────────
 t              = 1.0
-U_over_t       = 145.0          # ← was -1.0 in the first modular version
+U_over_t       = 125.0          # ← was -1.0 in the first modular version
 Delta_t_over_t = 4.5           # ← was  0.0 in the first modular version
 
 U       = U_over_t * t         #  75.0
