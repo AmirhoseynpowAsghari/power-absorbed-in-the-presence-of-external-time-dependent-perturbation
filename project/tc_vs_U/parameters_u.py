@@ -11,18 +11,22 @@
 import numpy as np
 from pathlib import Path
 
-# ── Physical parameters ───────────────────────────────────────────────
-t              = 1.0
+
+t              = 1.0          # NEVER change this
 Delta_t_over_t = 4.5
 Delta_t        = Delta_t_over_t * t
 
-# ── Fixed external parameters ─────────────────────────────────────────
-V_SO      = 0.4      # fixed spin-orbit coupling
+V_SO_over_t    = 0.8          # ← store the ratio
+V_SO           = V_SO_over_t * t   # derived
+
+U_min_over_t   = 75.0         # ← store the ratio
+U_max_over_t   = 125.0
+U_min          = U_min_over_t * t
+U_max          = U_max_over_t * t
+
 n_filling = 1.8850   # fixed electron density
 
-# ── U scan range ──────────────────────────────────────────────────────
-U_min        = 75.0
-U_max        = 125.0
+
 N_U_points   = 50
 U_values     = np.linspace(U_min, U_max, N_U_points)
 
