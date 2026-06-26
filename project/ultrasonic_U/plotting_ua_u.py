@@ -56,6 +56,10 @@ def plot_temperature_sweep(all_results, U_list=None, colors=None):
         ax.axvline(1.0, color='gray', ls='--', alpha=0.5)
         ax.set_xlim(0, 1.5)
 
+    for a_x in (ax1, ax2):
+        #ax.axvline(1.0, color='gray', ls='--', alpha=0.5)
+        a_x.set_ylim(0.8, 1.0)
+
     ax1.set(xlabel=r'$\Delta/\Delta_{\rm eff}$', ylabel=r'$W/W_N$',
             title=r'$W/W_N$ vs Normalised Gap')
     ax2.set(xlabel=r'$T/T_c$', ylabel=r'$W/W_N$',
